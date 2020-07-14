@@ -1,3 +1,4 @@
+# Exercise 6.5 String manipulation
 print("hello")
 greet = 'Hello Bob'
 vamos = type(greet[0:4])

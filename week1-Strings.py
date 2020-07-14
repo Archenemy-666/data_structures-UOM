@@ -1,13 +1,14 @@
 # Exercise 6.5 String manipulation
-print("hello")
-greet = 'Hello Bob'
-vamos = type(greet[0:4])
-print(vamos)
+#print("hello")
+#greet = 'Hello Bob'
+#vamos = type(greet[0:4])
+#print(vamos)
 str = 'X-DSPAM-Confidence:0.8475'
 print(type(str))
 loc = str.find(':')
 locend = len(str)
 l = type(str[loc+1:locend])
+# you can also use str[loc+1:]
 v = str[loc+1:locend]
 type(v)
 m = float(v)
@@ -18,3 +19,4 @@ print(m)
 # output type is NoneType
 
 
+ 

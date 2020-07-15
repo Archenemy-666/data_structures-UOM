@@ -19,4 +19,10 @@ print(m)
 # output type is NoneType
 
 
- 
+#TRAVERSAL THROUGH STRING LOOP EXERCISE 1
+point = -1 
+while point >= -len(str):
+    view = str[point]
+    print(view)
+    point = point - 1
+

@@ -8,10 +8,44 @@
 #     SAT, 05 JAN 2008 09:14:16 -0500
 filename = input("filename : ")
 df = open(filename,'r')
+count = 0 
+z = 0.0
 for line in df :
     l = line.rstrip()
-    print(l.upper())
+   # print(l.upper())
     
+    if line.startswith('X-DSPAM-Confidence:'):
+        y = float(line[19:])
+        print(y)
+        z = y + z
+        print(z)
+        count = count + 1
+print(count)
+print(z)
+avg = z / count
+print(avg)
+
+        #float(y)
+        #print(y.rstrip()) 
+        #count = count + 1 
+
+# Exercise 3 
+file1 = input("enter file name :")
+try :
+    df = open(file1)
+    count = 0 
+    for line in df :
+        count = count+1
+except:
+    if (file1 == 'lalala'):
+        print (file1, "you have been punk'd")
+    else :
+        print("file cannot be opened")
+
+
+
+    
+
     
 
   
